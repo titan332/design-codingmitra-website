@@ -29,7 +29,7 @@ export default function Page() {
         <About />
         <Pillars />
         <Products />
-        <Training />
+        <Training /> {/* also has internship section */}
         <Solutions />
         <Industries />
         <WhyUs />
