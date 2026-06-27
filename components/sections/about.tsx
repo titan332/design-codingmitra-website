@@ -33,7 +33,7 @@ export function About() {
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground text-pretty">
               CodingMitra Pvt. Ltd. is an IT services, product development and
-              software training company. We operate across three verticals —
+              software development company. We operate across three verticals —
               <strong className="text-foreground"> IT Services</strong>,
               <strong className="text-foreground"> Software Products</strong> and
               <strong className="text-foreground"> Training &amp; Internships</strong> —

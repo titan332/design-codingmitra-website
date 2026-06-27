@@ -31,6 +31,15 @@ export function Hero() {
 
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 pb-20 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:px-8 lg:pb-28">
         <div>
+          <motion.span
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex dark:bg-accent/10 dark:text-white items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5 text-sm font-medium text-accent-foreground"
+          >
+            <Sparkles className="size-4" />
+            AI-Augmented Development Studio
+          </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
@@ -48,7 +57,7 @@ export function Hero() {
             className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground text-pretty"
           >
             CodingMitra delivers custom software, web &amp; AI solutions and
-            scalable products for modern businesses — while training the next
+            scalable products for modern businesses with combine AI speed — while training the next
             generation of engineers through industry-focused programs and
             internships.
           </motion.p>
@@ -59,19 +68,16 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-8 flex flex-col gap-3 sm:flex-row"
           >
-            <Button asChild size="lg" className="rounded-full">
-              <a href="#contact">
-                Book a Free Consultation
-                {/* <ArrowRight className="size-4" /> */}
-              </a>
+            <Button size="lg" className="rounded-full w-48 bg-brand text-white hover:opacity-90 hover:scale-105 cursor-pointer border-0" style={{ backgroundClip: 'border-box', WebkitBackgroundClip: 'border-box' }} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+              Book a Consultation
+              <ArrowRight className="ml-2 size-4" />
             </Button>
             <Button
-              asChild
               size="lg"
               variant="outline"
               className="rounded-full"
             >
-              <a href="#solutions">Explore Our Services</a>
+              <a href="#solutions">Explore Services</a>
             </Button>
           </motion.div>
 
@@ -113,7 +119,7 @@ export function Hero() {
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY }}
-            className="absolute -bottom-5 -left-5 hidden rounded-xl border border-border bg-card px-4 py-3 shadow-lg sm:block"
+            className="absolute dark:border-2 dark:border-foreground/90 dark:bg-white -bottom-5 -left-5 hidden rounded-xl border border-border bg-card px-4 py-3 shadow-lg sm:block"
           >
             <p className="text-2xl font-bold text-gradient">98%</p>
             <p className="text-xs text-muted-foreground">On-time delivery</p>

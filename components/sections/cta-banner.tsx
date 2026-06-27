@@ -17,34 +17,31 @@ export function CtaBanner() {
             </div>
             <div className="relative">
               <h2 className="mx-auto max-w-2xl font-heading text-3xl font-bold tracking-tight text-balance sm:text-4xl">
-                Let&apos;s build something great together
+                Ready to build
               </h2>
-              <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-primary-foreground/80 text-pretty">
-                Whether you need a product built, a team trained or a partner
-                for your institution — we&apos;d love to hear from you. Book a
-                free consultation today.
+              <p className="mx-auto mt-4 max-w-xl text-2xl font-semibold leading-relaxed text-primary-foreground text-pretty">
+                Your Product Doesn&apos;t Need to Be Perfect.
+                <br />
+                It Needs to Start.
+              </p>
+              <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-primary-foreground/80 text-pretty">
+                Let&apos;s turn your idea into a product your users will love. Talk to us today — no commitment, just a conversation.
               </p>
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
                 <Button
-                  asChild
                   size="lg"
                   variant="secondary"
-                  className="rounded-full"
+                  className="rounded-full cursor-pointer"
                 >
-                  <a href="#contact">
-                    Book a Free Consultation
+                  <a href="#contact" className="cursor-pointer flex items-center gap-2 ">
+                    Schedule Now
                     <ArrowRight className="size-4" />
                   </a>
                 </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="rounded-full border-primary-foreground/30 bg-transparent text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
-                >
-                  <a href="#products">Explore Our Products</a>
-                </Button>
               </div>
+              <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-primary-foreground/60 text-pretty">
+                We&apos;ll review your project goals, discuss the best tech approach, and outline a clear roadmap — no strings attached.
+              </p>
             </div>
           </div>
         </Reveal>

@@ -44,9 +44,12 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
-          <ThemeToggle />
-          <Button asChild className="rounded-full">
+          <ThemeToggle className="cursor-pointer" />
+          {/* <Button asChild className="rounded-full">
             <a href="#contact">Book Consultation</a>
+          </Button> */}
+          <Button className="hidden md:inline-flex rounded-full bg-brand text-white hover:opacity-90 hover:scale-105 cursor-pointer border-0" style={{ backgroundClip: 'border-box', WebkitBackgroundClip: 'border-box' }} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+            Book Consultation
           </Button>
         </div>
 
@@ -80,10 +83,8 @@ export function SiteHeader() {
                 {link.label}
               </a>
             ))}
-            <Button asChild className="mt-2 rounded-full">
-              <a href="#contact" onClick={() => setOpen(false)}>
-                Book Consultation
-              </a>
+            <Button className="mt-2 rounded-full bg-brand text-white hover:opacity-90 border-0" style={{ backgroundClip: 'border-box', WebkitBackgroundClip: 'border-box' }} onClick={() => { setOpen(false); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}>
+              Book Consultation
             </Button>
           </nav>
         </div>

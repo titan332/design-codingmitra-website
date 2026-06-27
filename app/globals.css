@@ -48,6 +48,7 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --gradient-brand: var(--brand-gradient);
 }
 
 :root {
@@ -86,6 +87,7 @@
   --sidebar-accent-foreground: oklch(0.4 0.1 252);
   --sidebar-border: oklch(0.91 0.015 240);
   --sidebar-ring: oklch(0.7 0.13 218);
+  --brand-gradient: linear-gradient(90deg, oklch(0.35 0.12 255) 0%, oklch(0.65 0.18 210) 100%);
 }
 
 .dark {
@@ -123,43 +125,67 @@
   --sidebar-accent-foreground: oklch(0.96 0.01 235);
   --sidebar-border: oklch(1 0 0 / 12%);
   --sidebar-ring: oklch(0.7 0.13 218);
+  --brand-gradient: linear-gradient(90deg, oklch(0.45 0.14 260) 0%, oklch(0.70 0.18 210) 100%);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans scroll-smooth;
   }
+
+  .bg-brand {
+    background-clip: border-box !important;
+    -webkit-background-clip: border-box !important;
+  }
+}
+
+@utility bg-brand {
+  background: var(--brand-gradient) !important;
+  background-clip: border-box !important;
+  -webkit-background-clip: border-box !important;
+}
+
+@utility text-brand {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(
-      90deg,
-      var(--brand-navy),
-      var(--brand-cyan)
-    );
+    background: linear-gradient(90deg,
+        var(--brand-navy),
+        var(--brand-cyan));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
+
   .bg-grid {
-    background-image: radial-gradient(
-      circle at 1px 1px,
-      color-mix(in oklch, var(--foreground) 12%, transparent) 1px,
-      transparent 0
-    );
+    background-image: radial-gradient(circle at 1px 1px,
+        color-mix(in oklch, var(--foreground) 12%, transparent) 1px,
+        transparent 0);
     background-size: 36px 36px;
   }
+
   .glass {
     background: color-mix(in oklch, var(--card) 70%, transparent);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+  }
+
+  .bg-clip-border {
+    background-clip: border-box !important;
+    -webkit-background-clip: border-box !important;
   }
 }
 
@@ -167,13 +193,16 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
 }
+
 .animate-marquee {
   animation: marquee 32s linear infinite;
 }
+
 .marquee-pause:hover .animate-marquee {
   animation-play-state: paused;
 }

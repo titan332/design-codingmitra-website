@@ -92,11 +92,10 @@ export function Pillars() {
                   ))}
                 </ul>
                 <Button
-                  asChild
                   variant="ghost"
-                  className="mt-6 justify-start px-0 text-primary hover:bg-transparent hover:text-accent-foreground"
+                  className="mt-6 justify-center px-0 text-primary hover:bg-transparent hover:text-accent-foreground"
                 >
-                  <a href={p.cta.href}>
+                  <a href={p.cta.href} className="flex items-center gap-2">
                     {p.cta.label}
                     <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
                   </a>

@@ -28,19 +28,19 @@ export default function Page() {
         {/* <TrustedBy /> */}
         <About />
         <Pillars />
-        <Products />
-        <Training /> {/* also has internship section */}
-        <Solutions />
-        <Industries />
         <WhyUs />
-        <Technologies />
         <Process />
         <Stats />
-        <Portfolio />
-        <Testimonials />
-        <Faq />
         <CtaBanner />
+        <Testimonials />
+        {/* <Products /> */}
+        {/* <Training /> */}
+        <Solutions />
+        <Industries />
         <Contact />
+        <Faq />
+        {/* <Technologies /> */}
+        {/* <Portfolio /> */}
       </main>
       <SiteFooter />
       <FloatingWidgets />
