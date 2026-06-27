@@ -1,7 +1,7 @@
 "use client"
 
 import { Menu, X } from "lucide-react"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Logo } from "@/components/logo"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
@@ -9,29 +9,18 @@ import { navLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
 export function SiteHeader() {
-  const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12)
-    onScroll()
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
 
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
-        scrolled
-          ? "glass border-b border-border/70 shadow-sm"
-          : "bg-background/80 backdrop-blur-md border-b border-border/50",
+        "fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-background border-b border-border/70 shadow-sm",
       )}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Logo />
 
-        <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -43,17 +32,17 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           <ThemeToggle className="cursor-pointer" />
           {/* <Button asChild className="rounded-full">
             <a href="#contact">Book Consultation</a>
           </Button> */}
-          <Button className="hidden md:inline-flex rounded-full bg-brand text-white hover:opacity-90 hover:scale-105 cursor-pointer border-0" style={{ backgroundClip: 'border-box', WebkitBackgroundClip: 'border-box' }} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+          <Button className="hidden lg:inline-flex rounded-full bg-brand text-white hover:opacity-90 hover:scale-105 cursor-pointer border-0" style={{ backgroundClip: 'border-box', WebkitBackgroundClip: 'border-box' }} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
             Book Consultation
           </Button>
         </div>
 
-        <div className="flex items-center gap-1 md:hidden">
+        <div className="flex items-center gap-1 lg:hidden">
           <ThemeToggle />
           <Button
             variant="ghost"
@@ -68,7 +57,7 @@ export function SiteHeader() {
       </div>
 
       {open ? (
-        <div className="glass border-t border-border/70 md:hidden">
+        <div className="glass border-t border-border/70 lg:hidden">
           <nav
             className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4"
             aria-label="Mobile"
