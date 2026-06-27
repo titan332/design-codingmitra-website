@@ -2,6 +2,8 @@ import { Analytics } from "@vercel/analytics/next"
 import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono, Sora } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 import "./globals.css"
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] })
@@ -105,6 +107,13 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} ${sora.variable} bg-background`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {process.env.NODE_ENV === "production" && <Analytics />}
+      </head>
       <body className="font-sans antialiased">
         <ThemeProvider
           attribute="class"
@@ -112,13 +121,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <SiteHeader />
           {children}
+          <SiteFooter />
         </ThemeProvider>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   )

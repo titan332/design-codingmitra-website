@@ -25,7 +25,7 @@ export function About() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <Reveal>
-            <span className="inline-flex items-center rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-foreground">
+            <span className="inline-flex dark:text-white items-center rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-foreground">
               About CodingMitra
             </span>
             <h2 className="mt-4 font-heading text-3xl font-bold tracking-tight text-balance sm:text-4xl">

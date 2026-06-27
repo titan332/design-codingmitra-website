@@ -29,16 +29,15 @@ const details = [
   {
     icon: Phone,
     label: "Phone",
-    value: siteConfig.phone,
+    value: `${siteConfig.phone}\n${siteConfig.phone2}`,
     href: `tel:${siteConfig.phoneHref}`,
   },
-  {
-    icon: MessageCircle,
-    label: "WhatsApp",
-    value: "Chat with us",
-    href: `https://wa.me/${siteConfig.whatsapp}`,
+  { 
+    icon: MapPin, 
+    label: "Address", 
+    value: siteConfig.address, 
+    href: "https://maps.app.goo.gl/6ZFZ1rv7kF8n2wL59" 
   },
-  { icon: MapPin, label: "Office", value: siteConfig.address },
   { icon: Clock, label: "Business Hours", value: siteConfig.hours },
 ]
 
@@ -73,7 +72,7 @@ export function Contact() {
                         <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
                           {d.label}
                         </p>
-                        <p className="mt-0.5 text-sm font-medium">{d.value}</p>
+                        <p className="mt-0.5 text-sm font-medium whitespace-pre-line">{d.value}</p>
                       </div>
                     </div>
                   )
@@ -90,8 +89,8 @@ export function Contact() {
               <div className="overflow-hidden rounded-2xl border border-border">
                 <iframe
                   title="CodingMitra office location"
-                  src="https://www.google.com/maps?q=India&output=embed"
-                  className="h-64 w-full grayscale"
+                  src="https://www.google.com/maps?q=CodingMitra+Pvt.+Ltd.&output=embed"
+                  className="h-64 w-full"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 />

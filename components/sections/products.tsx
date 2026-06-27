@@ -1,3 +1,5 @@
+"use client"
+
 import { ArrowRight, Check } from "lucide-react"
 import Image from "next/image"
 import { Reveal } from "@/components/reveal"
@@ -12,6 +14,7 @@ type Product = {
   features: string[]
   cta: string
   status?: string
+  link?: string
 }
 
 const products: Product[] = [
@@ -29,6 +32,7 @@ const products: Product[] = [
     ],
     cta: "Learn More",
     status: "Live",
+    link: "https://dailymock.com/",
   },
   {
     name: "KidsMate",
@@ -43,6 +47,7 @@ const products: Product[] = [
     ],
     cta: "Explore Product",
     status: "Live",
+    link: "https://kidsmate.codingmitra.co.in/",
   },
 ]
 
@@ -92,12 +97,19 @@ export function Products() {
                       </li>
                     ))}
                   </ul>
-                  <Button asChild className="mt-7 w-fit rounded-full">
-                    <a href="#contact">
+                  {product.link ? (
+                    <a href={product.link} target="_blank" rel="noopener noreferrer" className="inline-block">
+                      <Button className="mt-7 w-fit rounded-full bg-brand text-white hover:opacity-90 hover:scale-105 cursor-pointer border-0" style={{ backgroundClip: 'border-box', WebkitBackgroundClip: 'border-box' }}>
+                        {product.cta}
+                        <ArrowRight className="size-4" />
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button className="mt-7 w-fit rounded-full bg-brand text-white hover:opacity-90 hover:scale-105 cursor-pointer border-0" style={{ backgroundClip: 'border-box', WebkitBackgroundClip: 'border-box' }} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
                       {product.cta}
                       <ArrowRight className="size-4" />
-                    </a>
-                  </Button>
+                    </Button>
+                  )}
                 </div>
               </article>
             </Reveal>

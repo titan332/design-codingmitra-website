@@ -25,11 +25,11 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? (
-        <span className="inline-flex items-center rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-foreground">
+        <span className="inline-flex dark:text-white items-center rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent-foreground">
           {eyebrow}
         </span>
       ) : null}
-      <h2 className="mt-4 font-heading text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+      <h2 className="mt-4 dark:text-white font-heading text-3xl font-bold tracking-tight text-balance sm:text-4xl">
         {title}
       </h2>
       {description ? (

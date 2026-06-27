@@ -77,7 +77,7 @@ export function Hero() {
               variant="outline"
               className="rounded-full"
             >
-              <a href="#solutions">Explore Services</a>
+              <a href="/services">Explore Services</a>
             </Button>
           </motion.div>
 

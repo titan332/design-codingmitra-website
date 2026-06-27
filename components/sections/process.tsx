@@ -24,7 +24,7 @@ export function Process() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="How we work"
-          title="A development process built on clarity"
+          title="A development process built on clarity with power of AI"
           description="A proven, transparent workflow that keeps you in the loop from first conversation to long-term support."
         />
 

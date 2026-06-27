@@ -1,18 +1,18 @@
 export const siteConfig = {
   name: "CodingMitra Pvt. Ltd.",
-  email: "hello@codingmitra.com",
-  phone: "+91 00000 00000",
-  phoneHref: "+910000000000",
-  whatsapp: "910000000000",
-  address: "CodingMitra Pvt. Ltd., Tech Park, India",
-  hours: "Mon – Sat · 9:30 AM – 7:00 PM IST",
+  email: "contact@codemate.co.in",
+  phone: "+91 930 708 4168",
+  phone2: "+91 814 992 2353",
+  phoneHref: "+91 930 708 4168",
+  phone2Href: "+91 814 992 2353",
+  address: "Plot No. 3, Takli Sim, Near- Metro Piller No. 104, Hingna Road, Nagpur-440036, Maharashtra",
+  hours: "Mon – Sat \n 9:30 AM – 7:00 PM IST",
 }
 
 export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#solutions" },
-  { label: "Products", href: "#products" },
-  { label: "Training", href: "#training" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/#about" },
+  { label: "Services", href: "/services" },
+  { label: "Products", href: "/products" },
+  { label: "Training & Internships", href: "/training" },
+  { label: "Contact", href: "/#contact" },
 ] as const

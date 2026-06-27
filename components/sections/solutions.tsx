@@ -27,10 +27,8 @@ const solutions = [
   { icon: Boxes, title: "SaaS Development", body: "Multi-tenant, subscription-ready SaaS built to scale." },
   { icon: Rocket, title: "MVP Development", body: "Validate ideas fast with lean, investor-ready MVPs." },
   { icon: Cpu, title: "UI/UX Design", body: "Clean, accessible interfaces that convert and delight." },
-  { icon: Plug, title: "API Integration", body: "Connect tools, payments and third-party services seamlessly." },
   { icon: Cloud, title: "Cloud Deployment", body: "Secure, scalable infrastructure on modern cloud platforms." },
   { icon: Workflow, title: "Technical Consulting", body: "Architecture and strategy guidance from senior engineers." },
-  { icon: RefreshCw, title: "Product Modernization", body: "Refactor and re-platform legacy systems with confidence." },
   { icon: LifeBuoy, title: "Maintenance & Support", body: "Reliable ongoing support, monitoring and improvements." },
 ]
 
@@ -40,7 +38,7 @@ export function Solutions() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Our Solutions"
-          title="Engineering Solutions for Modern Businesses"
+          title="AI Engineering Solutions for Modern Businesses"
           description="A full-stack partner across the entire product lifecycle — from idea and design to launch, scale and support."
         />
 
