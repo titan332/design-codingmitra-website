@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/section-heading"
 import { CtaBanner } from "@/components/sections/cta-banner"
 
 export const metadata: Metadata = {
-  title: "Training & Internships | CodingMitra Pvt. Ltd.",
+  title: "Training & Internships",
   description: "Industry-focused training programs and internships in MERN Stack, Java Full Stack, Python, Data Science, AI, and more. Become job-ready with real projects.",
 }
 

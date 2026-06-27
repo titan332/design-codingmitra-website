@@ -8,6 +8,9 @@ export const siteConfig = {
   whatsapp: "919307084168",
   address: "Plot No. 3, Takli Sim, Near- Metro Piller No. 104, Hingna Road, Nagpur-440036, Maharashtra",
   hours: "Mon – Sat \n 9:30 AM – 7:00 PM IST",
+  linkedin: "https://www.linkedin.com/company/codingmitra",
+  instagram: "https://www.instagram.com/codingmitra_nagpur",
+  facebook: "https://www.facebook.com/p/CodingMitra-Pvt-Ltd-100089091533140/",
 }
 
 export const navLinks = [

@@ -13,10 +13,10 @@ export function Stats() {
   return (
     <section className="py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Stagger className="flex gap-4 overflow-x-auto pb-4 sm:justify-center sm:overflow-visible">
+        <Stagger className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
           {stats.map((stat) => (
             <StaggerItem key={stat.label}>
-              <div className="min-w-[140px] flex-shrink-0 rounded-2xl border border-border bg-card p-6 text-center transition-shadow hover:shadow-lg sm:min-w-[160px]">
+              <div className="rounded-2xl border border-border bg-card p-6 text-center transition-shadow hover:shadow-lg">
                 <p className="font-heading text-4xl font-extrabold text-gradient sm:text-5xl">
                   <Counter value={stat.value} suffix={stat.suffix} />
                 </p>

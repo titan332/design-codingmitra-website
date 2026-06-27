@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/section-heading"
 import { CtaBanner } from "@/components/sections/cta-banner"
 
 export const metadata: Metadata = {
-  title: "Services | CodingMitra Pvt. Ltd.",
+  title: "Services",
   description: "AI-powered software development services including web development, mobile apps, AI solutions, automation, and technical consulting for modern businesses.",
 }
 

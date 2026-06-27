@@ -68,14 +68,14 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-8 flex flex-col gap-3 sm:flex-row"
           >
-            <Button size="lg" className="rounded-full w-48 bg-brand text-white hover:opacity-90 hover:scale-105 cursor-pointer border-0" style={{ backgroundClip: 'border-box', WebkitBackgroundClip: 'border-box' }} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button size="lg" className="rounded-full w-full sm:w-auto bg-brand text-white hover:opacity-90 hover:scale-105 cursor-pointer border-0" style={{ backgroundClip: 'border-box', WebkitBackgroundClip: 'border-box' }} onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Book a Consultation
               <ArrowRight className="ml-2 size-4" />
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="rounded-full"
+              className="rounded-full w-full sm:w-auto"
             >
               <a href="/services">Explore Services</a>
             </Button>

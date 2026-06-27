@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import { FloatingWidgets } from "@/components/floating-widgets"
 import { Hero } from "@/components/sections/hero"
 import { TrustedBy } from "@/components/sections/trusted-by"
@@ -16,6 +17,11 @@ import { Testimonials } from "@/components/sections/testimonials"
 import { Faq } from "@/components/sections/faq"
 import { CtaBanner } from "@/components/sections/cta-banner"
 import { Contact } from "@/components/sections/contact"
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "CodingMitra Pvt. Ltd. - Your trusted technology partner for IT services, software products, training and internships.",
+}
 
 export default function Page() {
   return (
