@@ -40,7 +40,7 @@ export function WhyUs() {
               What Makes Us Different
             </h2>
             <p className="mt-4 text-lg sm:text-xl text-muted-foreground max-w-2xl">
-              A partner that combines real engineering depth with a genuine commitment to building people, not just products.
+              A partner that combines real engineering depth with AI-powered development to fast-track your product—without compromising quality, scalability, or long-term reliability.
             </p>
             <div className="mt-6 w-20 h-1 bg-accent rounded-full"></div>
           </div>
