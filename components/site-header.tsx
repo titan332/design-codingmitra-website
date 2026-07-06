@@ -14,7 +14,7 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-background border-b border-border/70 shadow-sm",
+        "fixed inset-x-0 top-0 z-50 transition-all duration-300 bg-background",
       )}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">

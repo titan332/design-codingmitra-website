@@ -15,7 +15,7 @@ export function FloatingWidgets() {
   }, [])
 
   return (
-    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-center gap-3">
+    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-center gap-3" suppressHydrationWarning>
       <button
         type="button"
         aria-label="Back to top"
