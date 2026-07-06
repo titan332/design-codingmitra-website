@@ -30,13 +30,38 @@ export function WhyUs() {
   return (
     <section id="why" className="py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          eyebrow="Why CodingMitra"
-          title="What Makes Us Different"
-          description="A partner that combines real engineering depth with a genuine commitment to building people, not just products."
-        />
+        {/* Header Section with Image Space */}
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-16">
+          <div className="flex-1">
+            <span className="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-sm font-medium text-accent-foreground ring-1 ring-inset ring-accent/20">
+              WHY CODINGMITRA
+            </span>
+            <h2 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-foreground leading-tight">
+              What Makes Us Different
+            </h2>
+            <p className="mt-4 text-lg sm:text-xl text-muted-foreground max-w-2xl">
+              A partner that combines real engineering depth with a genuine commitment to building people, not just products.
+            </p>
+            <div className="mt-6 w-20 h-1 bg-accent rounded-full"></div>
+          </div>
+          <div className="flex-1 flex justify-center lg:justify-end w-full lg:w-auto">
+            <img 
+              src="/ideas-to-products.png" 
+              alt="Ideas to Products Illustration" 
+              className="w-full max-w-md h-auto rounded-2xl"
+            />
+          </div>
+        </div>
 
-        <Stagger className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        {/* WITH THE POWER OF Section */}
+        <div className="mb-10">
+          <h3 className="text-2xl sm:text-3xl text-center font-heading font-bold text-foreground">
+            With The Power Of
+          </h3>
+        </div>
+
+        {/* Cards Grid */}
+        <Stagger className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {reasons.map((r) => (
             <StaggerItem key={r.title}>
               <div className="group h-full rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-lg">

@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Do you provide ongoing support after launch?",
-    a: "Yes. We offer maintenance, monitoring and continuous improvement plans so your software stays secure, fast and up to date long after launch.",
+    a: "Yes, we offer maintenance, monitoring and continuous improvement plans so your software stays secure, fast and up to date long after launch.",
   },
 ]
 

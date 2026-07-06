@@ -125,7 +125,7 @@ export function SiteFooter() {
                 <Phone className="size-4 text-accent" /> {siteConfig.phone}
               </a>
               <p className="flex items-center gap-2">
-                <MapPin className="size-4 text-accent" /> {siteConfig.address}
+                <MapPin className="size-8 text-accent" /> {siteConfig.address}
               </p>
             </div>
           </div>
