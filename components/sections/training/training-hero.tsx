@@ -6,7 +6,7 @@ import { Reveal } from "@/components/reveal"
 
 export function TrainingHero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-background via-background to-secondary/20 py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-background via-background to-secondary/20 py-16 sm:py-20 sm:pt-32">
       {/* Animated background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-0 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-accent/5 blur-3xl" />

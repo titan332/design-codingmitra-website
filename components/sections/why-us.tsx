@@ -28,7 +28,7 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <section id="why" className="py-20 sm:py-28">
+    <section id="why" className="py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header Section with Image Space */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-16">

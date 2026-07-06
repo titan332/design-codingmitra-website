@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export function CtaBanner() {
   return (
-    <section className="py-20 sm:py-24">
+    <section className="py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="relative overflow-hidden rounded-3xl bg-primary px-6 py-14 text-center text-primary-foreground sm:px-12 sm:py-20">

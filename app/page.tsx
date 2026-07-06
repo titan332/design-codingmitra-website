@@ -10,6 +10,7 @@ import { Process } from "@/components/sections/process"
 import { Testimonials } from "@/components/sections/testimonials"
 import { Faq } from "@/components/sections/faq"
 import { CtaBanner } from "@/components/sections/cta-banner"
+import { InstitutePartners } from "@/components/sections/institute-partners"
 import { Contact } from "@/components/sections/contact"
 
 export const metadata: Metadata = {
@@ -34,6 +35,7 @@ export default function Page() {
         {/* <Training /> */}
         {/* <Solutions /> */}
         <Industries />
+        <InstitutePartners />
         <Contact />
         <Faq />
         {/* <Technologies /> */}

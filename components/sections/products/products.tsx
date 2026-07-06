@@ -79,7 +79,7 @@ export function Products() {
   const [hoveredProduct, setHoveredProduct] = useState<string | null>(null)
 
   return (
-    <section id="products" className="py-20 sm:py-28">
+    <section id="products" className="py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Our Products"

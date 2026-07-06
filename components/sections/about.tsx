@@ -21,7 +21,7 @@ const cards = [
 
 export function About() {
   return (
-    <section id="about" className="py-20 sm:py-28">
+    <section id="about" className="py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <Reveal>

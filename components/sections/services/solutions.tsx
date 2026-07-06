@@ -114,7 +114,7 @@ const solutions = [
 
 export function Solutions() {
   return (
-    <section id="solutions" className="py-20 sm:py-28">
+    <section id="solutions" className="py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Our Solutions"
