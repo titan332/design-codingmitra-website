@@ -116,7 +116,7 @@ export function Training() {
         <Reveal className="mt-14">
           <div className="mb-8 flex items-center justify-between">
             <h3 className="font-heading text-2xl font-semibold">
-              Programs we offer
+              Internship Programs we offer
             </h3>
             <Badge className="bg-accent/10 text-accent hover:bg-accent/20">
               <Clock className="mr-1 size-3" />
