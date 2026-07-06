@@ -45,7 +45,7 @@ export function Faq() {
         />
 
         <Reveal className="mt-12">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion className="w-full">
             {faqs.map((faq, i) => (
               <AccordionItem
                 key={faq.q}

@@ -33,41 +33,41 @@ const columns = [
   {
     title: "Services",
     links: [
-      { label: "Web Development", href: "#services" },
-      { label: "Mobile Apps", href: "#services" },
-      { label: "AI Development", href: "#services" },
-      { label: "AI Automation", href: "#services" },
-      { label: "UI/UX Design", href: "#services" },
-      { label: "CMS Solutions", href: "#services" },
-      { label: "MVP Launch", href: "#services" },
-      { label: "Software Development", href: "#services" },
-      { label: "IT Consulting", href: "#services" },
+      { label: "Web Development", href: "/services" },
+      { label: "Mobile Apps", href: "/services" },
+      { label: "AI Development", href: "/services" },
+      { label: "AI Automation", href: "/services" },
+      { label: "UI/UX Design", href: "/services" },
+      { label: "CMS Solutions", href: "/services" },
+      { label: "MVP Launch", href: "/services" },
+      { label: "Software Development", href: "/services" },
+      { label: "IT Consulting", href: "/services" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "About Us", href: "#about" },
-      { label: "Portfolio", href: "#portfolio" },
+      { label: "About Us", href: "/about" },
+      { label: "Portfolio", href: "/portfolio" },
       { label: "Blog", href: "/blog" },
       { label: "Careers", href: "/careers" },
       { label: "Contact", href: "#contact" },
-      { label: "Sitemap", href: "/sitemap.xml" },
+      // { label: "Sitemap", href: "/sitemap.xml" },
       { label: "Privacy Policy", href: "/privacy-policy" },
-      { label: "Cookie Settings", href: "#" },
+      // { label: "Cookie Settings", href: "#" },
     ],
   },
   {
     title: "Industries",
     links: [
-      { label: "Healthcare", href: "#" },
-      { label: "Fintech & Banking", href: "#" },
-      { label: "E-Commerce", href: "#" },
-      { label: "Education", href: "#" },
-      { label: "Real Estate", href: "#" },
-      { label: "Logistics", href: "#" },
-      { label: "Travel", href: "#" },
-      { label: "Manufacturing", href: "#" },
+      { label: "Healthcare", href: "" },
+      { label: "Fintech & Banking", href: "" },
+      { label: "E-Commerce", href: "" },
+      { label: "Education", href: "" },
+      { label: "Real Estate", href: "" },
+      { label: "Logistics", href: "" },
+      { label: "Travel", href: "" },
+      { label: "Manufacturing", href: "" },
     ],
   },
   {
@@ -136,12 +136,18 @@ export function SiteFooter() {
               <ul className="mt-4 space-y-3">
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <a
-                      href={link.href}
-                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      {link.label}
-                    </a>
+                    {link.href ? (
+                      <a
+                        href={link.href}
+                        className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <span className="text-sm text-muted-foreground">
+                        {link.label}
+                      </span>
+                    )}
                   </li>
                 ))}
               </ul>
