@@ -108,7 +108,7 @@ export function Training() {
     <section id="training" className="py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Training & Internships"
+          eyebrow="Internships"
           title="Industry-Ready Programs"
           description="Hands-on programs designed around what hiring teams actually look for, taught by engineers who ship real software every day."
         />

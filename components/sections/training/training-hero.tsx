@@ -40,7 +40,7 @@ export function TrainingHero() {
 
             <Reveal>
               <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-                Hands-on training programs designed around what hiring teams actually look for, 
+                Hands-on internship programs designed around what hiring teams actually look for, 
                 taught by engineers who ship real software every day.
               </p>
             </Reveal>
