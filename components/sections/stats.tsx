@@ -2,11 +2,11 @@ import { Counter } from "@/components/counter"
 import { Stagger, StaggerItem } from "@/components/reveal"
 
 const stats = [
-  { value: 10, suffix: "+", label: "Projects Delivered" },
+  { value: 25, suffix: "+", label: "Projects Delivered" },
   { value: 3, suffix: "+", label: "Years of Excellence" },
-  { value: 10, suffix: "+", label: "Happy Clients" },
-  { value: 15, suffix: "+", label: "Team Members" },
-  { value: 1000, suffix: "+", label: "Students Trained" },
+  { value: 20, suffix: "+", label: "Happy Clients" },
+  { value: 20, suffix: "+", label: "Team Members" },
+  { value: 5000, suffix: "+", label: "Students Trained" },
 ]
 
 export function Stats() {

@@ -48,7 +48,7 @@ export function TrainingTestimonials() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <Reveal key={testimonial.name} delay={index * 0.1}>
-              <div className="group rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-2 hover:border-accent/30 hover:shadow-xl cursor-pointer">
+              <div className="group h-full rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-2 hover:border-accent/30 hover:shadow-xl cursor-pointer">
                 <div className="flex items-center gap-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="size-4 fill-yellow-400 text-yellow-400" />

@@ -33,10 +33,7 @@ const pillars = [
     items: [
       "DailyMock — Assessments",
       "KidsMate — Kids Coding",
-      "Performance Analytics",
-      "Certificates & Reports",
-      "Continuous Improvements",
-      "Scalable Architecture",
+      "Trainer's Connect"
     ],
     cta: { label: "View Products", href: "/products" },
   },
@@ -81,7 +78,7 @@ export function Pillars() {
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     {p.description}
                   </p>
-                  <ul className="mt-5 grid flex-1 gap-2.5">
+                  <ul className="mt-5 grid gap-2.5">
                     {p.items.map((item) => (
                       <li
                         key={item}
@@ -94,7 +91,7 @@ export function Pillars() {
                   </ul>
                   <Button
                     variant="ghost"
-                    className="mt-6 justify-center px-0 text-primary hover:bg-transparent hover:text-accent-foreground"
+                    className="mt-auto justify-center px-0 text-primary hover:bg-transparent hover:text-accent-foreground"
                   >
                     <span className="flex items-center gap-2">
                       {p.cta.label}

@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "CodingMitra Pvt. Ltd.",
-  email: "contact@codemate.co.in",
+  email: "info@codingmitra.co.in",
   phone: "+91 930 708 4168",
   phone2: "+91 814 992 2353",
   phoneHref: "+91 930 708 4168",

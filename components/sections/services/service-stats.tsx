@@ -17,7 +17,7 @@ const stats = [
   },
   { 
     icon: Clock, 
-    value: "45", 
+    value: "60", 
     label: "Days Average Delivery", 
     description: "From concept to MVP deployment" 
   },
