@@ -245,11 +245,11 @@ export function Training() {
               <StaggerItem key={institute.name}>
                 <div className="group rounded-xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg">
                   <div className="flex flex-col items-center gap-4 text-center">
-                    <div className="rounded-full bg-white p-3">
+                    <div className="rounded-full bg-white p-4">
                       <img
                         src={institute.logo}
                         alt={institute.name}
-                        className="size-16 object-contain"
+                        className="size-24 object-contain"
                       />
                     </div>
                     <div>
