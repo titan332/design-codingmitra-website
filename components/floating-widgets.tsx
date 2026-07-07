@@ -7,8 +7,10 @@ import { cn } from "@/lib/utils"
 
 export function FloatingWidgets() {
   const [visible, setVisible] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     const onScroll = () => setVisible(window.scrollY > 600)
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
@@ -22,7 +24,7 @@ export function FloatingWidgets() {
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className={cn(
           "flex size-11 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-lg transition-all duration-300 hover:bg-secondary",
-          visible
+          mounted && visible
             ? "translate-y-0 opacity-100"
             : "pointer-events-none translate-y-3 opacity-0",
         )}

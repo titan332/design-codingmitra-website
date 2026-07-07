@@ -30,13 +30,13 @@ export const allTestimonials = [
     type: "Intern",
   },
   {
-    quote: "My experience is very nice",
+    quote: "My internship experience has been very enjoyable and rewarding.",
     name: "Sakshi Thaware",
     role: "Intern",
     type: "Intern",
   },
   {
-    quote: "Best experience",
+    quote: "Best internship experience with a supportive team and a positive learning environment.",
     name: "Smit Ninawe",
     role: "Intern",
     type: "Intern",
@@ -48,7 +48,38 @@ export const allTestimonials = [
     role: "VNIT",
     type: "Client",
   },
-]
+
+  // New Testimonials
+
+  {
+    quote:
+      "The internship provided an excellent learning environment where I gained practical experience, worked on real projects, and improved my technical skills in a short time.",
+    name: "Monika Bidwaik",
+    role: "Intern",
+    type: "Intern",
+  },
+  {
+    quote:
+      "A great internship experience with the CodingMitra team. Working on practical tasks helped me strengthen my skills and build confidence in software development.",
+    name: "Sujay Das",
+    role: "Intern",
+    type: "Intern",
+  },
+  {
+    quote:
+      "The internship offered hands-on experience in frontend development through real-world assignments. It was a valuable journey that significantly improved my confidence and practical knowledge.",
+    name: "Aachal Ghivtunde",
+    role: "Intern",
+    type: "Intern",
+  },
+  {
+    quote:
+      "My internship journey was engaging and helped me strengthen my programming skills through practical projects, continuous guidance, and real development experience.",
+    name: "Madhura Joshi",
+    role: "Intern",
+    type: "Intern",
+  },
+];
 
 export const clientTestimonials = allTestimonials.filter((t) => t.type === "Client")
 export const internTestimonials = allTestimonials.filter((t) => t.type === "Intern")

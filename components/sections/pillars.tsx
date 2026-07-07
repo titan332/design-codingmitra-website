@@ -39,9 +39,9 @@ const pillars = [
   },
   {
     icon: GraduationCap,
-    title: "Training & Internships",
+    title: "Internships",
     description:
-      "Industry-focused programs that turn students into job-ready engineers.",
+      "Industry-focused internship programs that turn students into job-ready engineers.",
     items: [
       "MERN & Java Full Stack",
       "Python, Data Science & AI",
