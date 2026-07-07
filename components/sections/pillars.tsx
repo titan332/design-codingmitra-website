@@ -47,7 +47,6 @@ const pillars = [
       "Python, Data Science & AI",
       "Live Real-World Projects",
       "CRT & Placement Support",
-      "Internship Programs",
       "College Partnerships",
     ],
     cta: { label: "Explore Programs", href: "/training" },
