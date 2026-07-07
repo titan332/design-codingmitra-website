@@ -41,7 +41,7 @@ export function Testimonials() {
         />
 
         <div className="relative mx-auto mt-14 max-w-3xl">
-          <div className="rounded-3xl border border-border bg-card p-8 shadow-lg sm:p-12">
+          <div className="rounded-2xl border border-border bg-card p-6 shadow-lg sm:p-12">
             <Quote className="size-10 text-accent/40" />
             <div className="mt-4 min-h-44 sm:min-h-36">
               <AnimatePresence mode="wait">
