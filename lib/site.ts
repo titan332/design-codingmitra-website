@@ -24,7 +24,7 @@ export const navLinks = [
 export const allTestimonials = [
   {
     quote:
-      "Learning here is too much interactive, I have just completed my 15days of 1 month internship program and it looks amazing. The teachers are supportive and gives the assignments time to time. Moreover I will continue this for next 6 months also...",
+      "The internship has been a great learning experience. In just 15 days, I've worked on real-world tasks, improved my technical skills, and gained valuable industry exposure. The mentors are supportive, provide timely guidance, and encourage continuous learning. I'm excited to continue my internship journey over the next six months.",
     name: "Amey Saurkar",
     role: "Intern",
     type: "Intern",
