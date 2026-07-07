@@ -72,13 +72,6 @@ export const allTestimonials = [
     role: "Intern",
     type: "Intern",
   },
-  {
-    quote:
-      "My internship journey was engaging and helped me strengthen my programming skills through practical projects, continuous guidance, and real development experience.",
-    name: "Madhura Joshi",
-    role: "Intern",
-    type: "Intern",
-  },
 ];
 
 export const clientTestimonials = allTestimonials.filter((t) => t.type === "Client")
