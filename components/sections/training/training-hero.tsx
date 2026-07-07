@@ -70,7 +70,7 @@ export function TrainingHero() {
             <Reveal>
               <div className="mt-10 flex flex-wrap gap-8">
                 {[
-                  { icon: GraduationCap, label: "Students Trained", value: "1000+" },
+                  { icon: GraduationCap, label: "Students Trained", value: "5000+" },
                   { icon: Users, label: "Workshops", value: "20+" },
                   { icon: Briefcase, label: "Placement Rate", value: "85%" },
                 ].map((stat) => (
