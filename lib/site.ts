@@ -20,3 +20,35 @@ export const navLinks = [
   { label: "Internship", href: "/internship" },
   { label: "Contact", href: "/#contact" },
 ] as const
+
+export const allTestimonials = [
+  {
+    quote:
+      "Learning here is too much interactive, I have just completed my 15days of 1 month internship program and it looks amazing. The teachers are supportive and gives the assignments time to time. Moreover I will continue this for next 6 months also...",
+    name: "Amey Saurkar",
+    role: "Intern",
+    type: "Intern",
+  },
+  {
+    quote: "My experience is very nice",
+    name: "Sakshi Thaware",
+    role: "Intern",
+    type: "Intern",
+  },
+  {
+    quote: "Best experience",
+    name: "Smit Ninawe",
+    role: "Intern",
+    type: "Intern",
+  },
+  {
+    quote:
+      "CodingMitra built our NCWE conference website with exceptional quality. The platform was delivered on time and handled all our requirements perfectly.",
+    name: "Department of Applied Mechanics",
+    role: "VNIT",
+    type: "Client",
+  },
+]
+
+export const clientTestimonials = allTestimonials.filter((t) => t.type === "Client")
+export const internTestimonials = allTestimonials.filter((t) => t.type === "Intern")

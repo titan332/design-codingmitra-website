@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react"
 import { useCallback, useEffect, useState } from "react"
 import { SectionHeading } from "@/components/section-heading"
 import { Button } from "@/components/ui/button"
+import { allTestimonials as testimonials } from "@/lib/site"
 
 type Testimonial = {
   quote: string
@@ -12,37 +13,6 @@ type Testimonial = {
   role: string
   type: string
 }
-
-const testimonials: Testimonial[] = [
-  {
-    quote:
-      "CodingMitra delivered our MVP ahead of schedule and the quality was exceptional. They felt like an extension of our own team.",
-    name: "Rahul Mehta",
-    role: "Founder, FinTech Startup",
-    type: "Client",
-  },
-  {
-    quote:
-      "The MERN program completely changed my career. Working on real projects gave me the confidence to crack my first developer job.",
-    name: "Sneha Patil",
-    role: "Software Engineer",
-    type: "Student",
-  },
-  {
-    quote:
-      "Their team partnered with our college for internships and workshops. Our students gained genuine industry exposure and placements improved.",
-    name: "Dr. A. Sharma",
-    role: "Placement Head, Engineering College",
-    type: "College",
-  },
-  {
-    quote:
-      "We rebuilt our legacy platform with CodingMitra and saw a real jump in performance and reliability. Highly recommended.",
-    name: "Priya Nair",
-    role: "Product Manager, E-commerce",
-    type: "Client",
-  },
-]
 
 export function Testimonials() {
   const [index, setIndex] = useState(0)

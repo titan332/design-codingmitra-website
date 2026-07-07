@@ -1,30 +1,23 @@
 // components/sections/service-testimonials.tsx
 import { Reveal } from "@/components/reveal"
 import { Star } from "lucide-react"
+import { clientTestimonials } from "@/lib/site"
 
-const testimonials = [
-  {
-    name: "Sarah Chen",
-    role: "CTO, TechVentures",
-    content: "They transformed our legacy system into a modern AI-powered platform. Our operational efficiency increased by 60%.",
-    rating: 5,
-    image: "S"
-  },
-  {
-    name: "Michael Rodriguez",
-    role: "Product Director, HealthAI",
-    content: "The MVP they built for us in just 6 weeks helped us secure our Series A funding. Absolutely exceptional work.",
-    rating: 5,
-    image: "M"
-  },
-  {
-    name: "Emily Thompson",
-    role: "CEO, SmartRetail",
-    content: "Their AI automation solution saved us thousands of hours annually. Best investment we ever made.",
-    rating: 5,
-    image: "E"
-  },
-]
+type ServiceTestimonial = {
+  name: string
+  role: string
+  content: string
+  rating: number
+  image: string
+}
+
+const serviceTestimonials: ServiceTestimonial[] = clientTestimonials.map((t) => ({
+  name: t.name,
+  role: t.role,
+  content: t.quote,
+  rating: 5,
+  image: t.name.charAt(0),
+}))
 
 export function ServiceTestimonials() {
   return (
@@ -42,10 +35,10 @@ export function ServiceTestimonials() {
           </div>
         </Reveal>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
+        <div className="flex flex-wrap justify-center gap-6">
+          {serviceTestimonials.map((testimonial, index) => (
             <Reveal key={testimonial.name} delay={index * 0.1}>
-              <div className="group rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl">
+              <div className="group w-full max-w-md rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl">
                 <div className="flex items-center gap-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="size-4 fill-accent text-accent" />

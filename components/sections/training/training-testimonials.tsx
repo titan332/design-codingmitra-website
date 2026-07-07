@@ -1,33 +1,25 @@
 // components/sections/training-testimonials.tsx
 import { Reveal } from "@/components/reveal"
 import { Star } from "lucide-react"
+import { internTestimonials } from "@/lib/site"
 
-const testimonials = [
-  {
-    name: "Amit Patel",
-    role: "Full Stack Developer",
-    company: "TCS",
-    content: "The MERN stack training was incredible. I went from knowing basic HTML to building full-stack applications in 4 months. The mentorship was outstanding.",
-    rating: 5,
-    avatar: "A"
-  },
-  {
-    name: "Priya Sharma",
-    role: "Data Analyst",
-    company: "Accenture",
-    content: "The Data Analytics program gave me practical skills that directly translated to my job. The real-world projects were exactly what employers are looking for.",
-    rating: 5,
-    avatar: "P"
-  },
-  {
-    name: "Rahul Verma",
-    role: "Data Scientist",
-    company: "Amazon",
-    content: "The Data Science curriculum was comprehensive and up-to-date with industry standards. The placement support helped me land my dream job.",
-    rating: 5,
-    avatar: "R"
-  }
-]
+type TrainingTestimonial = {
+  name: string
+  role: string
+  company: string
+  content: string
+  rating: number
+  avatar: string
+}
+
+const trainingTestimonials: TrainingTestimonial[] = internTestimonials.map((t: any) => ({
+  name: t.name,
+  role: t.role,
+  company: "CodingMitra",
+  content: t.quote,
+  rating: 5,
+  avatar: t.name.charAt(0),
+}))
 
 export function TrainingTestimonials() {
   return (
@@ -46,7 +38,7 @@ export function TrainingTestimonials() {
         </Reveal>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((testimonial, index) => (
+          {trainingTestimonials.map((testimonial, index) => (
             <Reveal key={testimonial.name} delay={index * 0.1}>
               <div className="group h-full rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-2 hover:border-accent/30 hover:shadow-xl cursor-pointer">
                 <div className="flex items-center gap-1">

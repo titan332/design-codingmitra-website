@@ -67,7 +67,7 @@ export function Pillars() {
         <Stagger className="mt-14 grid gap-6 lg:grid-cols-3">
           {pillars.map((p) => (
             <StaggerItem key={p.title}>
-              <a href={p.cta.href} className="group block h-full">
+              <a href={p.cta.href} className="group block h-full cursor-pointer">
                 <div className="flex h-full flex-col rounded-2xl border border-border bg-card p-7 transition-all duration-300 hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl hover:bg-gradient-to-br hover:from-accent/10 hover:via-primary/5 hover:to-accent/10 dark:hover:from-accent/20 dark:hover:via-primary/10 dark:hover:to-accent/20">
                   <span className="flex size-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
                     <p.icon className="size-6" />
@@ -91,7 +91,7 @@ export function Pillars() {
                   </ul>
                   <Button
                     variant="ghost"
-                    className="mt-auto justify-center px-0 text-primary hover:bg-transparent hover:text-accent-foreground"
+                    className="mt-auto pt-8 justify-center px-0 text-primary hover:bg-transparent hover:text-accent-foreground dark:hover:bg-transparent dark:hover:text-white cursor-pointer"
                   >
                     <span className="flex items-center gap-2">
                       {p.cta.label}

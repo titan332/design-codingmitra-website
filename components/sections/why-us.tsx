@@ -33,7 +33,7 @@ export function WhyUs() {
         {/* Header Section with Image Space */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 mb-16">
           <div className="flex-1">
-            <span className="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-sm font-medium text-accent-foreground ring-1 ring-inset ring-accent/20">
+            <span className="inline-flex dark:text-white items-center rounded-full bg-accent/10 px-3 py-1 text-sm font-medium text-accent-foreground ring-1 ring-inset ring-accent/20">
               WHY CODINGMITRA
             </span>
             <h2 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-foreground leading-tight">
