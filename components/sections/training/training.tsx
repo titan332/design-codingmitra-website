@@ -175,7 +175,7 @@ export function Training() {
                     </div>
 
                     <Button
-                      className={`mt-auto w-full bg-gradient-to-r ${course.color} text-white hover:scale-105 transition-all shadow-lg hover:shadow-xl cursor-pointer`}
+                      className={`mt-auto w-full border-0 bg-gradient-to-r ${course.color} text-white hover:scale-105 transition-all shadow-lg hover:shadow-xl cursor-pointer`}
                       onClick={() => window.location.href = '/#contact'}
                     >
                       Enroll Now

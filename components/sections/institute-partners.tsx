@@ -4,13 +4,13 @@
 import { Reveal, Stagger, StaggerItem } from "@/components/reveal"
 
 const institutes = [
-  { name: "Symbiosis Institute of Technology, Nagpur", location: "Nagpur, Maharashtra", logo: "/symbiosis.webp" },
+  { name: "Symbiosis Institute of Technology, Nagpur", location: "Nagpur, Maharashtra", logo: "/symbiosis.jpg" },
   { name: "Priyadarshini College of Engineering", location: "Nagpur, Maharashtra", logo: "/priyadarshini.webp" },
   { name: "St. Vincent Pallotti College of Engineering", location: "Nagpur, Maharashtra", logo: "/vincent.webp" },
-  { name: "G H Raisoni College of Engineering and Management", location: "Nagpur, Maharashtra", logo: "/raisoni.webp" },
+  { name: "G H Raisoni College of Engineering and Management", location: "Nagpur, Maharashtra", logo: "/raisoni.jpg" },
   { name: "S B Jain Institute of Technology Management and Research", location: "Nagpur, Maharashtra", logo: "/sbjain.webp" },
-  { name: "Cummins College of Engineering", location: "Pune, Maharashtra", logo: "/cummins.webp" },
-  { name: "City Premier College of Management", location: "Nagpur, Maharashtra", logo: "/city-premier.webp" },
+  { name: "Cummins College of Engineering", location: "Pune, Maharashtra", logo: "/cummins.jpg" },
+  { name: "City Premier College of Management", location: "Nagpur, Maharashtra", logo: "/cpc.jpg" },
   { name: "Tirpude College of Management", location: "Nagpur, Maharashtra", logo: "/tirpude.webp" },
   { name: "Vidarbha Institute of Technology", location: "Nagpur, Maharashtra", logo: "/vidarbha.webp" },
   { name: "Priyadarshini Bhagwati College of Engineering", location: "Nagpur, Maharashtra", logo: "/priyadarshini-bhagwati.webp" },
