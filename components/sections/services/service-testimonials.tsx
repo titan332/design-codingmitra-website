@@ -38,7 +38,7 @@ export function ServiceTestimonials() {
         <div className="flex flex-wrap justify-center gap-6">
           {serviceTestimonials.map((testimonial, index) => (
             <Reveal key={testimonial.name} delay={index * 0.1}>
-              <div className="group w-full max-w-md rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl">
+              <div className="group h-full w-full max-w-md rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-2 hover:border-primary/30 hover:shadow-xl">
                 <div className="flex items-center gap-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="size-4 fill-accent text-accent" />
