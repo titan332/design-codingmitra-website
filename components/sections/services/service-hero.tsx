@@ -84,7 +84,7 @@ export function ServiceHero() {
               <div className="relative rounded-2xl border border-border bg-card/50 p-6 backdrop-blur-sm">
                 <div className="grid grid-cols-2 gap-4">
                   {[
-                    { label: "Projects Delivered", value: "10+", color: "primary" },
+                    { label: "Projects Delivered", value: "25+", color: "primary" },
                     { label: "Client Satisfaction", value: "98%", color: "accent" },
                     { label: "Avg. Time to Market", value: "60 Days", color: "blue" },
                     { label: "AI Integration", value: "85%", color: "purple" },
