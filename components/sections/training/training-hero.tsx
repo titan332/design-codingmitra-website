@@ -23,7 +23,7 @@ export function TrainingHero() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <Reveal>
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/5 px-4 py-1.5 text-sm font-medium text-accent">
+              <div className="my-8 md:my-6 inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/5 px-4 py-1.5 text-sm font-medium text-accent">
                 <Sparkles className="size-4" />
                 Industry-Ready Programs
               </div>

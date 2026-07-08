@@ -20,7 +20,7 @@ export function ServiceHero() {
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <Reveal>
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
+              <div className="my-8 md:my-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
                 <Sparkles className="size-4" />
                 AI-Powered Solutions
               </div>
