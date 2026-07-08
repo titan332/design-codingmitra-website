@@ -22,6 +22,7 @@ export function FloatingWidgets() {
         type="button"
         aria-label="Back to top"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        suppressHydrationWarning
         className={cn(
           "flex size-11 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-lg transition-all duration-300 hover:bg-secondary",
           mounted && visible

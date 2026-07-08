@@ -1,23 +1,10 @@
 "use client"
 
-import { CheckCircle2, Clock, Mail, MapPin, MessageCircle, Phone, Send } from "lucide-react"
-import { type FormEvent, useState } from "react"
+import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react"
 import { Reveal } from "@/components/reveal"
 import { SectionHeading } from "@/components/section-heading"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
+import { ContactForm } from "@/components/contact-form"
 import { siteConfig } from "@/lib/site"
-
-const interests = [
-  "Software Development",
-  "Web Development",
-  "AI Solutions / Automation",
-  "MVP / Product Development",
-  "Training / Internship",
-  "College Partnership",
-]
 
 const details = [
   {
@@ -42,13 +29,6 @@ const details = [
 ]
 
 export function Contact() {
-  const [submitted, setSubmitted] = useState(false)
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setSubmitted(true)
-  }
-
   return (
     <section id="contact" className="py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -100,91 +80,7 @@ export function Contact() {
 
           <Reveal delay={0.1}>
             <div className="rounded-3xl border border-border bg-card p-7 sm:p-9">
-              {submitted ? (
-                <div className="flex h-full min-h-80 flex-col items-center justify-center text-center">
-                  <CheckCircle2 className="size-14 text-accent" />
-                  <h3 className="mt-4 font-heading text-xl font-semibold">
-                    Thank you — message received!
-                  </h3>
-                  <p className="mt-2 max-w-sm text-sm text-muted-foreground">
-                    Our team will reach out within one business day. For urgent
-                    queries, message us on WhatsApp.
-                  </p>
-                  <Button
-                    variant="outline"
-                    className="mt-6 rounded-full"
-                    onClick={() => setSubmitted(false)}
-                  >
-                    Send another message
-                  </Button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
-                  <div className="grid gap-5 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="name">Full name</Label>
-                      <Input id="name" name="name" required placeholder="Your name" />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        placeholder="you@company.com"
-                      />
-                    </div>
-                  </div>
-                  <div className="grid gap-5 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="phone">Phone</Label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        placeholder="+91 00000 00000"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="interest">I&apos;m interested in</Label>
-                      <select
-                        id="interest"
-                        name="interest"
-                        className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-xs outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50"
-                        defaultValue=""
-                      >
-                        <option value="" disabled>
-                          Select an option
-                        </option>
-                        {interests.map((i) => (
-                          <option key={i} value={i}>
-                            {i}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      required
-                      rows={5}
-                      placeholder="Tell us about your project, goals or training needs..."
-                    />
-                  </div>
-                  <Button type="submit" size="lg" className="w-full rounded-full">
-                    Send Message
-                    <Send className="size-4" />
-                  </Button>
-                  <p className="text-center text-xs text-muted-foreground">
-                    By submitting, you agree to be contacted by CodingMitra
-                    regarding your enquiry.
-                  </p>
-                </form>
-              )}
+              <ContactForm />
             </div>
           </Reveal>
         </div>

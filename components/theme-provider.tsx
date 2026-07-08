@@ -7,5 +7,9 @@ export function ThemeProvider({
   children,
   ...props
 }: ComponentProps<typeof NextThemesProvider>) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+  return (
+    <div suppressHydrationWarning>
+      <NextThemesProvider {...props}>{children}</NextThemesProvider>
+    </div>
+  )
 }
